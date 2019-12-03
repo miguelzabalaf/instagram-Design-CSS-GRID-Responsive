@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+.post {
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    display: block;
+}
+
+.postImage{
+    margin: 0;
+}
+
+.postImage img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.postOverlay{
+    background: rgba(0,0,0, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    transition: all 0.3s;
+}
+    .postLikes,
+    .postComments{
+        width: 70px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+    }
+.post:hover .postOverlay{
+        display: flex;
+    }
