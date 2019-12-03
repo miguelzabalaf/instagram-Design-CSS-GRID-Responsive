@@ -6,8 +6,15 @@ body{
 .post {
     cursor: pointer;
     position: relative;
-    width: 200px;
+    /* width: 200px; */
     display: block;
+}
+
+.postList{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: center;
+    grid-gap: 28px;
 }
 
 .postImage{
@@ -44,3 +51,9 @@ body{
 .post:hover .postOverlay{
         display: flex;
     }
+
+@media screen and (max-width: 768px){
+    .postList{
+        grid-gap: 3px;
+    }
+}
